@@ -1,6 +1,9 @@
 #######Calculator#######
 
+
 def main():
+    name = "simple calculator"
+    print(name.title())
     calculator()
 
 def calculator():
@@ -17,7 +20,7 @@ def calculator():
     elif operator == "/":
         print(f"Division = {divide(number1, number2)}")
         
-    '''The only known problem is that: 10 / 0 will crash, 
+    '''The only known problem is that if "10 / 0" will crash, 
     but that's fine for now. When you reach Exceptions, 
     we can return to this calculator and improve it.'''
     

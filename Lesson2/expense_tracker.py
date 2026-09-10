@@ -34,6 +34,9 @@ def add_expense():
     expense = int(input("Enter expense amount: "))
     return expense
 
+def display_expenses(expenses):
+    for i in range(len(expenses)):
+        print(f"{i + 1}. {expenses[i]}")
 
 def display_total(expenses):
     total = 0
@@ -43,8 +46,5 @@ def display_total(expenses):
     
     print(f"Total = {total}")
 
-def display_expenses(expenses):
-    for i in range(len(expenses)):
-        print(f"{i + 1}. {expenses[i]}")
-        
+
 main()
